@@ -12,6 +12,7 @@ namespace Player
         [Header("Ground Check")]
         [SerializeField] private Transform groundCheck;
         [SerializeField] private LayerMask groundLayer;
+        [SerializeField] private LayerMask slopeLayer;
 
         private PlayerStateMachine _stm;
         
@@ -21,6 +22,7 @@ namespace Player
 
         private float _coyoteCounter = 0;
         private float _jumpBufferCounter = 0;
+        
         private void Awake()
         {
             _rb = GetComponent<Rigidbody2D>();
@@ -107,6 +109,11 @@ namespace Player
             _rb.linearVelocity = new Vector2(_rb.linearVelocityX, _rb.linearVelocityY * playerData.jumpReleasedForce);
         }
 
+        public void ToggleKinematic(bool state)
+        {
+            _rb.bodyType = (state) ? RigidbodyType2D.Kinematic : RigidbodyType2D.Dynamic;
+        }
+        
         #endregion
         
         #region Checkers
@@ -116,6 +123,7 @@ namespace Player
         public bool CheckFall() => !IsGrounded() && _rb.linearVelocityY < 0;
         public bool CheckLand() => IsGrounded() && _rb.linearVelocityY <= 0;
         public bool IsGrounded() => Physics2D.OverlapCircle(groundCheck.position, 0.15f, groundLayer);
+        //public bool IsOnSlope() => Physics2D.OverlapCircle(groundCheck.position, 0.15f, slopeLayer);
         public bool IsMoving() => _rb.linearVelocityX > 0.1f;
         
         #endregion
