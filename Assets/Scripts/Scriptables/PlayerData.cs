@@ -6,6 +6,8 @@ public class PlayerData : ScriptableObject
     [Header("Movement")]
     public float moveSpeed = 5f;
     
+    [Header("Ground Check")]
+    public float groundCheckRadius = 0.15f;
     [Header("Jump")]
     public float jumpForce = 10f;
     public float jumpReleasedForce = 0.5f;

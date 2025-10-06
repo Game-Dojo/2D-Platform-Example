@@ -4,8 +4,6 @@ namespace Player
 {
     public class PlayerController : MonoBehaviour
     {
-        private static readonly int Run = Animator.StringToHash("Run");
-
         [Header("Properties")] 
         [SerializeField] private PlayerData playerData;
         
@@ -14,31 +12,22 @@ namespace Player
         [SerializeField] private LayerMask groundLayer;
         [SerializeField] private LayerMask slopeLayer;
 
-        private PlayerStateMachine _stm;
-        
+        private PlayerAnimation _playerAnimation;
         private Rigidbody2D _rb;
-        private Animator _animator;
-        private SpriteRenderer _renderer;
 
         private float _coyoteCounter = 0;
         private float _jumpBufferCounter = 0;
         
         private void Awake()
         {
+            _playerAnimation = GetComponent<PlayerAnimation>();
             _rb = GetComponent<Rigidbody2D>();
-            _renderer = GetComponentInChildren<SpriteRenderer>();
-            _animator = GetComponentInChildren<Animator>();
-            
-            _stm = GetComponent<PlayerStateMachine>();
-        }
-
-        private void Start()
-        {
-            _stm.SetState(PlayerStateMachine.States.Idle);
         }
 
         private void Update()
         {
+            _playerAnimation.CheckFlip(_rb.linearVelocityX);
+            
             if (IsGrounded())
                 _coyoteCounter = playerData.coyoteTime;
             else
@@ -49,31 +38,6 @@ namespace Player
             else
                 _jumpBufferCounter -= Time.deltaTime;
         }
-        
-        #region Animations
-        
-        public void ToggleRunAnimation(bool state)
-        {
-            _animator.SetBool(Run, state);
-        }
-        public void TriggerAnimation(string state)
-        {
-            _animator.SetTrigger(state);
-        }
-        public void ResetTrigger(string state)
-        {
-            _animator.ResetTrigger(state);
-        }
-        
-        public void CheckFlip()
-        {
-            float vx = _rb.linearVelocity.x;
-
-            if (Mathf.Abs(vx) > 0.01f)
-                _renderer.flipX = vx < 0;
-        }
-        
-        #endregion
         
         #region Actions
         public void Jump()
@@ -108,11 +72,6 @@ namespace Player
         {
             _rb.linearVelocity = new Vector2(_rb.linearVelocityX, _rb.linearVelocityY * playerData.jumpReleasedForce);
         }
-
-        public void ToggleKinematic(bool state)
-        {
-            _rb.bodyType = (state) ? RigidbodyType2D.Kinematic : RigidbodyType2D.Dynamic;
-        }
         
         #endregion
         
@@ -122,8 +81,7 @@ namespace Player
         public bool CheckJumpReleased() => Input.GetButtonUp("Jump");
         public bool CheckFall() => !IsGrounded() && _rb.linearVelocityY < 0;
         public bool CheckLand() => IsGrounded() && _rb.linearVelocityY <= 0;
-        public bool IsGrounded() => Physics2D.OverlapCircle(groundCheck.position, 0.15f, groundLayer);
-        //public bool IsOnSlope() => Physics2D.OverlapCircle(groundCheck.position, 0.15f, slopeLayer);
+        public bool IsGrounded() => Physics2D.OverlapCircle(groundCheck.position, playerData.groundCheckRadius, groundLayer);
         public bool IsMoving() => _rb.linearVelocityX > 0.1f;
         
         #endregion
@@ -131,7 +89,7 @@ namespace Player
         private void OnDrawGizmos()
         {
             Gizmos.color =(IsGrounded()) ? Color.green : Color.red;
-            Gizmos.DrawWireSphere(groundCheck.position, 0.15f);
+            Gizmos.DrawWireSphere(groundCheck.position, playerData.groundCheckRadius);
         }
     }
 }

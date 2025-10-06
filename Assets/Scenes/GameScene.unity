@@ -760,8 +760,8 @@ MonoBehaviour:
   followTarget: {fileID: 940138343}
   followSpeed: 5
   targetOffset: {x: 0, y: 0, z: 0}
-  cameraLimits: {fileID: 240573435}
   limitCamera: 1
+  cameraLimits: {fileID: 240573435}
   ignoreY: 1
 --- !u!1 &530260259
 GameObject:
@@ -5018,7 +5018,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1221517363
 MonoBehaviour:
   m_ObjectHideFlags: 0

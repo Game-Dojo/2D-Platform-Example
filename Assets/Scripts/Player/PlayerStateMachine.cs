@@ -19,10 +19,12 @@ namespace Player
         [SerializeField] private TMP_Text stateLabel;
     
         private PlayerController _controller;
+        private PlayerAnimation _animation;
     
         private void Awake()
         {
             _controller = GetComponent<PlayerController>();
+            _animation = GetComponent<PlayerAnimation>();
         }
 
         private void Start()
@@ -33,8 +35,6 @@ namespace Player
         #region Loops
         private void Update()
         {
-            _controller.CheckFlip();
-        
             switch (currentState)
             {
                 #region Idle State
@@ -118,26 +118,30 @@ namespace Player
                 case States.Idle:
                     _controller.Stop();
                     _controller.SetGroundGravity();
-                    _controller.ToggleRunAnimation(false);
-                    _controller.ResetTrigger("Fall");
+                    
+                    _animation.ToggleRunAnimation(false);
+                    _animation.ResetTrigger("Fall");
                     break;
                 case States.Run:
                     _controller.SetGroundGravity();
-                    _controller.ToggleRunAnimation(true);
-                    _controller.ResetTrigger("Fall");
+                    
+                    _animation.ToggleRunAnimation(true);
+                    _animation.ResetTrigger("Fall");
                     break;
                 case States.Jump:
-                    _controller.ToggleRunAnimation(false);
-                    _controller.TriggerAnimation("Jump");
                     _controller.Jump();
+                    
+                    _animation.ToggleRunAnimation(false);
+                    _animation.TriggerAnimation("Jump");
                     break;
                 case States.Fall:
-                    _controller.TriggerAnimation("Fall");
                     _controller.SetFallGravity();
+                    
+                    _animation.TriggerAnimation("Fall");
                     break;
                 case States.Land:
-                    _controller.ResetTrigger("Fall");
-                    _controller.TriggerAnimation("Land");
+                    _animation.ResetTrigger("Fall");
+                    _animation.TriggerAnimation("Land");
                     break;
             }
         
