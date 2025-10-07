@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Player
@@ -18,10 +19,16 @@ namespace Player
         private float _coyoteCounter = 0;
         private float _jumpBufferCounter = 0;
         
+        #region Unity Methods
         private void Awake()
         {
             _playerAnimation = GetComponent<PlayerAnimation>();
             _rb = GetComponent<Rigidbody2D>();
+        }
+
+        private void Start()
+        {
+            SetGroundGravity();
         }
 
         private void Update()
@@ -38,6 +45,7 @@ namespace Player
             else
                 _jumpBufferCounter -= Time.deltaTime;
         }
+        #endregion
         
         #region Actions
         public void Jump()
@@ -60,7 +68,7 @@ namespace Player
 
         public void Move()
         {
-            _rb.linearVelocity = new Vector2(GetHorizontalInput() * playerData.moveSpeed, _rb.linearVelocity.y);
+            _rb.linearVelocity = new Vector2(CheckHorizontalInput() * playerData.moveSpeed, _rb.linearVelocity.y);
         }
 
         public void Stop()
@@ -76,16 +84,19 @@ namespace Player
         #endregion
         
         #region Checkers
-        public float GetHorizontalInput() => Input.GetAxisRaw("Horizontal");
-        public bool CheckJump() => _jumpBufferCounter > 0f && _coyoteCounter > 0f;
+        public float CheckHorizontalInput() => Input.GetAxisRaw("Horizontal");
         public bool CheckJumpReleased() => Input.GetButtonUp("Jump");
+        public bool CheckAttackInput() => Input.GetButtonDown("Fire1");
+        
+        public bool CheckJump() => _jumpBufferCounter > 0f && _coyoteCounter > 0f;
         public bool CheckFall() => !IsGrounded() && _rb.linearVelocityY < 0;
         public bool CheckLand() => IsGrounded() && _rb.linearVelocityY <= 0;
+        
         public bool IsGrounded() => Physics2D.OverlapCircle(groundCheck.position, playerData.groundCheckRadius, groundLayer);
         public bool IsMoving() => _rb.linearVelocityX > 0.1f;
         
         #endregion
-        
+
         private void OnDrawGizmos()
         {
             Gizmos.color =(IsGrounded()) ? Color.green : Color.red;

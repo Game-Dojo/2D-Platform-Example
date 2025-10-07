@@ -404,15 +404,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_blue_6
+      name: Attack_1
       rect:
         serializedVersion: 2
         x: 9
         y: 279
         width: 31
         height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -426,15 +426,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_blue_7
+      name: Attack_2
       rect:
         serializedVersion: 2
         x: 63
         y: 279
         width: 30
         height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -448,15 +448,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_blue_8
+      name: Attack_3
       rect:
         serializedVersion: 2
         x: 122
         y: 279
         width: 31
         height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -470,15 +470,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_blue_9
+      name: Attack_4
       rect:
         serializedVersion: 2
         x: 178
         y: 279
         width: 45
         height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.35, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -492,15 +492,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_blue_10
+      name: Attack_5
       rect:
         serializedVersion: 2
         x: 242
         y: 279
         width: 25
         height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -514,15 +514,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_blue_11
+      name: Attack_6
       rect:
         serializedVersion: 2
         x: 298
         y: 279
         width: 20
         height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -712,7 +712,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump_1
+      name: Jump_Preparation_1
       rect:
         serializedVersion: 2
         x: 15
@@ -734,7 +734,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump_2
+      name: Jump_Preparation_2
       rect:
         serializedVersion: 2
         x: 74
@@ -756,7 +756,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump_3
+      name: Fly_Up_1
       rect:
         serializedVersion: 2
         x: 127
@@ -778,7 +778,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump_4
+      name: Fly_Up_2
       rect:
         serializedVersion: 2
         x: 183
@@ -800,7 +800,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump_5
+      name: Fly_Up_3
       rect:
         serializedVersion: 2
         x: 239
@@ -822,7 +822,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump_6
+      name: Fly_Up_4
       rect:
         serializedVersion: 2
         x: 295
@@ -844,7 +844,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump_7
+      name: Jump_Reload_1
       rect:
         serializedVersion: 2
         x: 345
@@ -866,7 +866,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump_8
+      name: Jump_Reload_2
       rect:
         serializedVersion: 2
         x: 401
@@ -888,15 +888,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_blue_28
+      name: Jump_Reload_3
       rect:
         serializedVersion: 2
         x: 11
         y: 120
         width: 28
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -910,15 +910,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_blue_29
+      name: Falling_1
       rect:
         serializedVersion: 2
         x: 71
         y: 114
         width: 27
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -932,15 +932,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_blue_30
+      name: Falling_2
       rect:
         serializedVersion: 2
         x: 127
         y: 114
         width: 27
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -954,15 +954,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_blue_31
+      name: Falling_3
       rect:
         serializedVersion: 2
         x: 183
         y: 114
         width: 27
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -976,15 +976,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_blue_32
+      name: Falling_4
       rect:
         serializedVersion: 2
         x: 239
         y: 114
         width: 27
         height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -998,15 +998,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_blue_33
+      name: Land_1
       rect:
         serializedVersion: 2
-        x: 295
+        x: 294
         y: 111
         width: 26
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1020,15 +1020,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_blue_34
+      name: Land_2
       rect:
         serializedVersion: 2
         x: 353
         y: 111
         width: 20
         height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1042,15 +1042,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_blue_35
+      name: Land_3
       rect:
         serializedVersion: 2
         x: 409
         y: 111
         width: 21
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1130,7 +1130,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hit_4
+      name: Death_1
       rect:
         serializedVersion: 2
         x: 181
@@ -1152,7 +1152,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hit_5
+      name: Death_2
       rect:
         serializedVersion: 2
         x: 233
@@ -1174,7 +1174,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hit_6
+      name: Death_3
       rect:
         serializedVersion: 2
         x: 288
@@ -1196,7 +1196,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hit_7
+      name: Death_4
       rect:
         serializedVersion: 2
         x: 343
@@ -1218,7 +1218,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dead_1
+      name: Death_5
       rect:
         serializedVersion: 2
         x: 393
@@ -1240,7 +1240,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dead_2
+      name: Death_6
       rect:
         serializedVersion: 2
         x: 1
@@ -1262,7 +1262,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dead_3
+      name: Death_7
       rect:
         serializedVersion: 2
         x: 57
@@ -1284,7 +1284,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dead_4
+      name: Death_8
       rect:
         serializedVersion: 2
         x: 113
@@ -1306,7 +1306,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dead_5
+      name: Death_9
       rect:
         serializedVersion: 2
         x: 169
@@ -1341,32 +1341,46 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Dead_1: 4327789709236471517
-      Dead_2: -2482386761079546984
-      Dead_3: -3074818354474697518
-      Dead_4: -7667599868957420218
-      Dead_5: -8126240614746057955
+      Attack_1: -800576830813657005
+      Attack_2: 8231743075891754182
+      Attack_3: -8656887508688393713
+      Attack_4: -295873946660304658
+      Attack_5: 558171635666706521
+      Attack_6: 5918146547289525073
+      Death_1: -5963140705259425874
+      Death_2: 7885989501681126501
+      Death_3: -1222796234334387562
+      Death_4: -6766178064038952303
+      Death_5: 4327789709236471517
+      Death_6: -2482386761079546984
+      Death_7: -3074818354474697518
+      Death_8: -7667599868957420218
+      Death_9: -8126240614746057955
+      Falling_1: -7091961792144869947
+      Falling_2: -2919059750867049837
+      Falling_3: -2132751362554913458
+      Falling_4: 7740197978178938197
+      Fly_Up_1: 3440140640559610851
+      Fly_Up_2: 8205866252796289765
+      Fly_Up_3: 441615018490022398
+      Fly_Up_4: -1718604325792255130
       Hit_1: -4590586621535092930
       Hit_2: -9061585915707981762
       Hit_3: 5554963566415947242
-      Hit_4: -5963140705259425874
-      Hit_5: 7885989501681126501
-      Hit_6: -1222796234334387562
-      Hit_7: -6766178064038952303
       Idle_1: 3985284202397769235
       Idle_2: -5571959646964134834
       Idle_3: -5923638566698374553
       Idle_4: -2036163937552166474
       Idle_5: -3196359339768424524
       Idle_6: 2176872491707650442
-      Jump_1: -3043372591264555510
-      Jump_2: -225105525380765072
-      Jump_3: 3440140640559610851
-      Jump_4: 8205866252796289765
-      Jump_5: 441615018490022398
-      Jump_6: -1718604325792255130
-      Jump_7: -6156885969728070689
-      Jump_8: -8225161442611755538
+      Jump_Preparation_1: -3043372591264555510
+      Jump_Preparation_2: -225105525380765072
+      Jump_Reload_1: -6156885969728070689
+      Jump_Reload_2: -8225161442611755538
+      Jump_Reload_3: 1788509980677098753
+      Land_1: -6315372793530451065
+      Land_2: -3570154780885519500
+      Land_3: 6737339578521853358
       Run_1: 8784075583782142130
       Run_2: 6359186134975446788
       Run_3: 4930399028410644332
@@ -1375,26 +1389,12 @@ TextureImporter:
       Run_6: -1606340115855780013
       Run_7: 466215843595501966
       Run_8: -3587708086436383580
-      char_blue_10: 558171635666706521
-      char_blue_11: 5918146547289525073
-      char_blue_28: 1788509980677098753
-      char_blue_29: -7091961792144869947
-      char_blue_30: -2919059750867049837
-      char_blue_31: -2132751362554913458
-      char_blue_32: 7740197978178938197
-      char_blue_33: -6315372793530451065
-      char_blue_34: -3570154780885519500
-      char_blue_35: 6737339578521853358
       char_blue_40: 9088972500647621606
       char_blue_42: -8840018176642514470
       char_blue_44: 4426567922449804684
       char_blue_46: -3090397374096847174
       char_blue_48: -3068285205281089956
       char_blue_50: 8458072781100079571
-      char_blue_6: -800576830813657005
-      char_blue_7: 8231743075891754182
-      char_blue_8: -8656887508688393713
-      char_blue_9: -295873946660304658
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

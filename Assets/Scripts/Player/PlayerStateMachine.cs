@@ -1,15 +1,20 @@
+using System.Collections;
 using TMPro;
+using UnityEditorInternal;
 using UnityEngine;
 
 namespace Player
 {
     public class PlayerStateMachine : MonoBehaviour
     {
-        public enum States
+        private enum States
         {
             Idle,
             Run,
             Jump,
+            Attack,
+            Hit,
+            Dead,
             Fall,
             Land
         }
@@ -21,29 +26,73 @@ namespace Player
         private PlayerController _controller;
         private PlayerAnimation _animation;
     
+        #region Unity Methods
         private void Awake()
         {
             _controller = GetComponent<PlayerController>();
             _animation = GetComponent<PlayerAnimation>();
         }
-
-        private void Start()
+        
+        private void Update()
         {
-            _controller.SetGroundGravity();
+            OnUpdateState();
         }
 
-        #region Loops
-        private void Update()
+        private void FixedUpdate()
+        {
+            OnFixedState();
+        }
+        #endregion
+        
+        #region State Management
+        private void OnEnterState(States newState)
+        {
+            switch (newState)
+            {
+                case States.Idle:
+                    _controller.Stop();
+                    _controller.SetGroundGravity();
+                    _animation.SetIdleAnimation();
+                    break;
+                case States.Run:
+                    _controller.SetGroundGravity();
+                    _animation.SetRunAnimation();
+                    break;
+                case States.Jump:
+                    _controller.Jump();
+                    _animation.SetJumpAnimation();
+                    break;
+                case States.Fall:
+                    _controller.SetFallGravity();
+                    _animation.SetFallAnimation();
+                    break;
+                case States.Land:
+                    _animation.SetLandAnimation();
+                    break;
+                case States.Attack:
+                    _controller.Stop();
+                    _animation.SetAttackAnimation();
+                    break;
+            }
+        }
+
+        private void OnUpdateState()
         {
             switch (currentState)
             {
                 #region Idle State
                 case States.Idle:
-                    if (_controller.GetHorizontalInput() != 0)
+                    if (_controller.CheckHorizontalInput() != 0)
                         SetState(States.Run);
                 
                     if (_controller.CheckJump())
                         SetState(States.Jump);
+                    
+                    if (_controller.CheckAttackInput())
+                        SetState(States.Attack);
+                    
+                    if (_controller.CheckFall())
+                        SetState(States.Fall);
                     break;
                 #endregion
             
@@ -55,7 +104,7 @@ namespace Player
                     if (_controller.CheckFall())
                         SetState(States.Fall);
                 
-                    if (_controller.GetHorizontalInput() == 0)
+                    if (_controller.CheckHorizontalInput() == 0)
                         SetState(States.Idle);
                     break;
                 #endregion
@@ -95,7 +144,7 @@ namespace Player
             }
         }
 
-        private void FixedUpdate()
+        private void OnFixedState()
         {
             switch (currentState)
             {
@@ -107,48 +156,13 @@ namespace Player
             }
         }
         #endregion
-    
-        #region State Management
-        public void SetState(States newState)
+        
+        private void SetState(States newState)
         {
             if (Equals(newState, currentState)) return;
-        
-            switch (newState)
-            {
-                case States.Idle:
-                    _controller.Stop();
-                    _controller.SetGroundGravity();
-                    
-                    _animation.ToggleRunAnimation(false);
-                    _animation.ResetTrigger("Fall");
-                    break;
-                case States.Run:
-                    _controller.SetGroundGravity();
-                    
-                    _animation.ToggleRunAnimation(true);
-                    _animation.ResetTrigger("Fall");
-                    break;
-                case States.Jump:
-                    _controller.Jump();
-                    
-                    _animation.ToggleRunAnimation(false);
-                    _animation.TriggerAnimation("Jump");
-                    break;
-                case States.Fall:
-                    _controller.SetFallGravity();
-                    
-                    _animation.TriggerAnimation("Fall");
-                    break;
-                case States.Land:
-                    _animation.ResetTrigger("Fall");
-                    _animation.TriggerAnimation("Land");
-                    break;
-            }
-        
+            OnEnterState(newState);
             if (stateLabel) stateLabel.text = newState.ToString();
-        
             currentState = newState;
         }
-        #endregion
     }
 }
