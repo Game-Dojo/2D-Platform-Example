@@ -51,11 +51,12 @@ namespace Utils
                 var minX = bounds.min.x + _boundWidth;
                 var maxX = bounds.max.x - _boundWidth;
                 
-                var minY = bounds.min.y + bounds.extents.y;
-                var maxY = bounds.max.y - bounds.extents.y;
+                // TODO: Fix for Y Position
+                //var minY = bounds.min.y + bounds.extents.y;
+                //var maxY = bounds.max.y - bounds.extents.y;
 
                 targetPosition.x = Mathf.Clamp(targetPosition.x, minX, maxX);
-                targetPosition.y = Mathf.Clamp(targetPosition.y, minY, maxY);
+                //targetPosition.y = Mathf.Clamp(targetPosition.y, minY, maxY);
             }
             
             transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * followSpeed);

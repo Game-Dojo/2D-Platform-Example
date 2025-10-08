@@ -93,7 +93,7 @@ namespace Player
         public bool CheckLand() => IsGrounded() && _rb.linearVelocityY <= 0;
         
         public bool IsGrounded() => Physics2D.OverlapCircle(groundCheck.position, playerData.groundCheckRadius, groundLayer);
-        public bool IsMoving() => _rb.linearVelocityX > 0.1f;
+        public bool IsMoving() => Mathf.Abs(_rb.linearVelocityX) > 0.01f;
         
         #endregion
 
