@@ -1,6 +1,5 @@
 using System.Collections;
 using TMPro;
-using UnityEditorInternal;
 using UnityEngine;
 
 namespace Player
@@ -32,7 +31,12 @@ namespace Player
             _controller = GetComponent<PlayerController>();
             _animation = GetComponent<PlayerAnimation>();
         }
-        
+
+        private void Start()
+        {
+            stateLabel.gameObject.SetActive(_controller.ShowStateLabel);
+        }
+
         private void Update()
         {
             OnUpdateState();
@@ -71,7 +75,15 @@ namespace Player
                     break;
                 case States.Attack:
                     _controller.Stop();
-                    _animation.SetAttackAnimation();
+                    StartCoroutine(OnAttackState());
+                    break;
+                case States.Hit:
+                    _controller.Stop();
+                    StartCoroutine(OnHitState());
+                    break;
+                case States.Dead:
+                    _controller.Stop();
+                    _animation.SetDeathAnimation();
                     break;
             }
         }
@@ -93,6 +105,9 @@ namespace Player
                     
                     if (_controller.CheckFall())
                         SetState(States.Fall);
+                    
+                    if (_controller.CheckHitButton())
+                        SetState(States.Hit);
                     break;
                 #endregion
             
@@ -137,10 +152,6 @@ namespace Player
                     SetState(_controller.IsMoving() ? States.Run : States.Idle);
                     break;
                 #endregion
-            
-                default:
-                    SetState(States.Idle);
-                    break;
             }
         }
 
@@ -155,6 +166,27 @@ namespace Player
                     break;
             }
         }
+        #endregion
+        
+        #region Coroutine States
+
+        private IEnumerator OnAttackState()
+        {
+            _animation.SetAttackAnimation();
+            
+            var stateInfo = _animation.GetAnimator().GetCurrentAnimatorStateInfo(0);
+            yield return new WaitForSeconds(stateInfo.length);
+            SetState(States.Idle);
+        }
+        private IEnumerator OnHitState()
+        {
+            _animation.SetHitAnimation();
+            
+            var stateInfo = _animation.GetAnimator().GetCurrentAnimatorStateInfo(0);
+            yield return new WaitForSeconds(stateInfo.length);
+            SetState(States.Idle);
+        }
+
         #endregion
         
         private void SetState(States newState)

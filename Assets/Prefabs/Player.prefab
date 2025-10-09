@@ -150,6 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa4f5ead04172624e9f3e8f02f28e231, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HitDetector
+  hitEffect: {fileID: 4964820251535973160, guid: 9c40ee8e528189146a983d7bc8c4923e, type: 3}
 --- !u!1 &1786631959715068712
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,4 +1,5 @@
 using System;
+using Scriptables;
 using UnityEngine;
 
 namespace Player
@@ -13,6 +14,9 @@ namespace Player
         [SerializeField] private LayerMask groundLayer;
         [SerializeField] private LayerMask slopeLayer;
 
+        [Header("Debug")]
+        [SerializeField] private bool showStateLabel = false;
+        
         private PlayerAnimation _playerAnimation;
         private Rigidbody2D _rb;
 
@@ -87,7 +91,7 @@ namespace Player
         public float CheckHorizontalInput() => Input.GetAxisRaw("Horizontal");
         public bool CheckJumpReleased() => Input.GetButtonUp("Jump");
         public bool CheckAttackInput() => Input.GetButtonDown("Fire1");
-        
+        public bool CheckHitButton() => Input.GetKeyDown(KeyCode.E);
         public bool CheckJump() => _jumpBufferCounter > 0f && _coyoteCounter > 0f;
         public bool CheckFall() => !IsGrounded() && _rb.linearVelocityY < 0;
         public bool CheckLand() => IsGrounded() && _rb.linearVelocityY <= 0;
@@ -97,6 +101,7 @@ namespace Player
         
         #endregion
 
+        public bool ShowStateLabel => showStateLabel;
         private void OnDrawGizmos()
         {
             Gizmos.color =(IsGrounded()) ? Color.green : Color.red;

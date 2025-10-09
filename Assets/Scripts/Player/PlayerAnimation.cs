@@ -9,7 +9,6 @@ namespace Player
         private static readonly int Death = Animator.StringToHash("Death");
         private static readonly int Hit = Animator.StringToHash("Hit");
         private static readonly int JumpPreparation = Animator.StringToHash("JumpPrep");
-        private static readonly int JumpFlyUp = Animator.StringToHash("FlyUp");
         private static readonly int Land = Animator.StringToHash("Land");
         
         private static readonly int MovingParam = Animator.StringToHash("Moving");
@@ -27,7 +26,8 @@ namespace Player
         public void CheckFlip( float velocityX )
         {
             if (Mathf.Abs(velocityX) > 0.01f)
-                _renderer.flipX = velocityX < 0;
+                transform.localScale = new Vector3((velocityX < 0) ? -1 : 1, transform.localScale.y, transform.localScale.z);
+            //_renderer.flipX = velocityX < 0;
         }
         
         public void SetIdleAnimation()
