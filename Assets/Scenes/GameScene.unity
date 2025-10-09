@@ -743,7 +743,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 11.002413, y: -0.099999905}
+  m_Offset: {x: 11.002413, y: -0.5353942}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -753,7 +753,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 43.945934, y: 10.247866}
+  m_Size: {x: 43.945934, y: 9.377077}
   m_EdgeRadius: 0
 --- !u!1 &265210647
 GameObject:
@@ -1072,7 +1072,7 @@ MonoBehaviour:
   targetOffset: {x: 0, y: 0, z: 0}
   limitCamera: 1
   cameraLimits: {fileID: 240573435}
-  ignoreY: 1
+  ignoreY: 0
 --- !u!1 &530260259
 GameObject:
   m_ObjectHideFlags: 0
@@ -1478,6 +1478,37 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &789899655
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 789899656}
+  m_Layer: 0
+  m_Name: Layer 4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &789899656
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789899655}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1504827849}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &800288478
 GameObject:
   m_ObjectHideFlags: 0
@@ -5466,6 +5497,7 @@ Transform:
   - {fileID: 1198738422}
   - {fileID: 530260260}
   - {fileID: 1606535755}
+  - {fileID: 789899656}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1504827850
@@ -5944,7 +5976,7 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 240573434}
   - {fileID: 7870288218209390635}
+  - {fileID: 2135268112782755012}
   - {fileID: 1221517364}
   - {fileID: 1504827849}
   - {fileID: 2106666037}
-  - {fileID: 2135268112782755012}
