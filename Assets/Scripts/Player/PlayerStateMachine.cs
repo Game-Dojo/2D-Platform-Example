@@ -63,6 +63,7 @@ namespace Player
                     _animation.SetRunAnimation();
                     break;
                 case States.Jump:
+                    _controller.SetGroundGravity();
                     _controller.Jump();
                     _animation.SetJumpAnimation();
                     break;
