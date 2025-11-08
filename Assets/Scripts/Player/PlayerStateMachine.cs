@@ -189,7 +189,12 @@ namespace Player
         }
 
         #endregion
-        
+
+        public void DealDamage()
+        {
+            print("DEAL DAMAGE");
+            SetState(States.Hit);
+        }
         private void SetState(States newState)
         {
             if (Equals(newState, currentState)) return;
