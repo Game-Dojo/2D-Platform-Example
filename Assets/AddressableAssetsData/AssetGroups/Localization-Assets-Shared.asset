@@ -15,8 +15,18 @@ MonoBehaviour:
   m_GroupName: Localization-Assets-Shared
   m_GUID: a32de3437227035488f0cfd9e78abba3
   m_SerializeEntries:
+  - m_GUID: 4c59acda9e56a4a4ebeb04b8fe7994f0
+    m_Address: Assets/StaticAssets/Locale/Menu Labels Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5142523c189eb2143909fdde280a63a6
     m_Address: Assets/StaticAssets/Locale/Ingame Labels Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f5cd024274bf9d24899ab2d2364333cd
+    m_Address: Assets/StaticAssets/Locale/Croak Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

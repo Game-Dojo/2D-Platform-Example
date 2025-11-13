@@ -15,6 +15,19 @@ MonoBehaviour:
   m_GroupName: Localization-String-Tables-Spanish (es)
   m_GUID: df8b30f7bb96e98428bd78f948f1835d
   m_SerializeEntries:
+  - m_GUID: 41f834a1f2832574cab97c4b78773226
+    m_Address: Croak_es
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bebcb38cc81caf94a880a62c1fe3db63
+    m_Address: Menu Labels_es
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c401556d9fee57f499521e0395b63d06
     m_Address: Ingame Labels_es
     m_ReadOnly: 1

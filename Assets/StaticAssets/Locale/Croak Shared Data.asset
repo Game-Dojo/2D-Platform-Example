@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Croak Shared Data
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.SharedTableData
+  m_TableCollectionName: Croak
+  m_TableCollectionNameGuidString: f5cd024274bf9d24899ab2d2364333cd
+  m_Entries:
+  - m_Id: 295560327168
+    m_Key: NEW_GAME
+    m_Metadata:
+      m_Items: []
+  - m_Id: 295606464512
+    m_Key: SETTINGS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 295606464513
+    m_Key: EXIT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 295606464514
+    m_Key: LANG
+    m_Metadata:
+      m_Items: []
+  - m_Id: 295610658816
+    m_Key: MUSIC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 295610658817
+    m_Key: SOUND
+    m_Metadata:
+      m_Items: []
+  - m_Id: 295610658818
+    m_Key: FULLSCREEN
+    m_Metadata:
+      m_Items: []
+  - m_Id: 295610658819
+    m_Key: ON
+    m_Metadata:
+      m_Items: []
+  - m_Id: 295610658820
+    m_Key: OFF
+    m_Metadata:
+      m_Items: []
+  - m_Id: 295610658821
+    m_Key: YOU_SURE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 295610658822
+    m_Key: YES
+    m_Metadata:
+      m_Items: []
+  - m_Id: 295610658823
+    m_Key: NO
+    m_Metadata:
+      m_Items: []
+  - m_Id: 295610658824
+    m_Key: PRESS_BUTTON
+    m_Metadata:
+      m_Items: []
+  - m_Id: 295610658825
+    m_Key: MODE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 295610658826
+    m_Key: WINDOWED
+    m_Metadata:
+      m_Items: []
+  - m_Id: 295610658827
+    m_Key: ENGLISH
+    m_Metadata:
+      m_Items: []
+  - m_Id: 295610658828
+    m_Key: SPANISH
+    m_Metadata:
+      m_Items: []
+  - m_Id: 295610658829
+    m_Key: INTERACT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 295610658830
+    m_Key: TO
+    m_Metadata:
+      m_Items: []
+  - m_Id: 295610658831
+    m_Key: MISSIONS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 295610658832
+    m_Key: PICKUP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 295610658833
+    m_Key: GO_IN
+    m_Metadata:
+      m_Items: []
+  - m_Id: 295610658834
+    m_Key: GO_OUT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 295610658835
+    m_Key: PRESS
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 381990445079855345
+  references:
+    version: 2
+    RefIds:
+    - rid: 381990445079855345
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1763074321400
