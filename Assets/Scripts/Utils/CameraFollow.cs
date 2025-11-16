@@ -32,6 +32,7 @@ namespace Utils
             _boundHeight = _cam.orthographicSize;
             _boundWidth = _boundHeight * _cam.aspect;
             
+            if(!followTarget) return;
             _targetInitialPosition = followTarget.position;
         }
 

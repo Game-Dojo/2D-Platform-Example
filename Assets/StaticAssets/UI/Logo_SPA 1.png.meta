@@ -1,0 +1,884 @@
+fileFormatVersion: 2
+guid: 6e04db18c085c0244b2024020596692c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6804729895701328245
+    second: Logo_SPA 1_0
+  - first:
+      213: -6402000315186153637
+    second: Logo_SPA 1_1
+  - first:
+      213: 9029429193481103114
+    second: Logo_SPA 1_2
+  - first:
+      213: 3570915420946791711
+    second: Logo_SPA 1_3
+  - first:
+      213: -1494192003420026368
+    second: Logo_SPA 1_4
+  - first:
+      213: 5129752950888628012
+    second: Logo_SPA 1_5
+  - first:
+      213: -3985585940049115025
+    second: Logo_SPA 1_6
+  - first:
+      213: 1769165393233140892
+    second: Logo_SPA 1_7
+  - first:
+      213: -3292808268526638016
+    second: Logo_SPA 1_8
+  - first:
+      213: -5365455327980603433
+    second: Logo_SPA 1_9
+  - first:
+      213: 4160930419462883607
+    second: Logo_SPA 1_10
+  - first:
+      213: 4382165353997397561
+    second: Logo_SPA 1_11
+  - first:
+      213: -7965779040144358263
+    second: Logo_SPA 1_12
+  - first:
+      213: 3082714963663429474
+    second: Logo_SPA 1_13
+  - first:
+      213: 1143859868996940454
+    second: Logo_SPA 1_14
+  - first:
+      213: 2861405890942247106
+    second: Logo_SPA 1_15
+  - first:
+      213: -2674620638187190164
+    second: Logo_SPA 1_16
+  - first:
+      213: 6111173206116689433
+    second: Logo_SPA 1_17
+  - first:
+      213: 1803618294379547806
+    second: Logo_SPA 1_18
+  - first:
+      213: 42952132810605974
+    second: Logo_SPA 1_19
+  - first:
+      213: 8485431017736565824
+    second: Logo_SPA 1_20
+  - first:
+      213: 9168694065521335957
+    second: Logo_SPA 1_21
+  - first:
+      213: -5356466307812144595
+    second: Logo_SPA 1_22
+  - first:
+      213: -2953229392753944401
+    second: Logo_SPA 1_23
+  - first:
+      213: -5922320464065755293
+    second: Logo_SPA 1_24
+  - first:
+      213: 2710492393796363891
+    second: Logo_SPA 1_25
+  - first:
+      213: -7240813764828340956
+    second: Logo_SPA 1_26
+  - first:
+      213: 4987450416320448887
+    second: Logo_SPA 1_27
+  - first:
+      213: 1826843041506501232
+    second: Logo_SPA 1_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Logo_SPA 1_0
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 112
+        width: 47
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8ecd3e763eb091a0800000000000000
+      internalID: -6804729895701328245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_SPA 1_1
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 112
+        width: 48
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b57f361f1a68727a0800000000000000
+      internalID: -6402000315186153637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_SPA 1_2
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 112
+        width: 48
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a07abf1f20afe4d70800000000000000
+      internalID: 9029429193481103114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_SPA 1_3
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 112
+        width: 47
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1d7f74e7a07e8130800000000000000
+      internalID: 3570915420946791711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_SPA 1_4
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 112
+        width: 48
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00a8be91a40934be0800000000000000
+      internalID: -1494192003420026368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_SPA 1_5
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 112
+        width: 47
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2f7a37512b803740800000000000000
+      internalID: 5129752950888628012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_SPA 1_6
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 112
+        width: 47
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f68c49d34ba50b8c0800000000000000
+      internalID: -3985585940049115025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_SPA 1_7
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 112
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9c539c3d865d8810800000000000000
+      internalID: 1769165393233140892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_SPA 1_8
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 112
+        width: 47
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04c200963589d42d0800000000000000
+      internalID: -3292808268526638016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_SPA 1_9
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 112
+        width: 47
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d73d7d7ec21a85b0800000000000000
+      internalID: -5365455327980603433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_SPA 1_10
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 112
+        width: 48
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 719c333cb289eb930800000000000000
+      internalID: 4160930419462883607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_SPA 1_11
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 112
+        width: 47
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93ee908fb2490dc30800000000000000
+      internalID: 4382165353997397561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_SPA 1_12
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 91
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98481f0ea2ed37190800000000000000
+      internalID: -7965779040144358263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_SPA 1_13
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 25
+        width: 50
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26f90f03de008ca20800000000000000
+      internalID: 3082714963663429474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_SPA 1_14
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 25
+        width: 49
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a2336c8d7ecfdf00800000000000000
+      internalID: 1143859868996940454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_SPA 1_15
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 25
+        width: 49
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c0a2d75f71c5b720800000000000000
+      internalID: 2861405890942247106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_SPA 1_16
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 25
+        width: 49
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c688ce743b6d1ead0800000000000000
+      internalID: -2674620638187190164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_SPA 1_17
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 25
+        width: 49
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 916687f07af3fc450800000000000000
+      internalID: 6111173206116689433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_SPA 1_18
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 25
+        width: 49
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9c83e2684db70910800000000000000
+      internalID: 1803618294379547806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_SPA 1_19
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 25
+        width: 49
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 695858abcb8989000800000000000000
+      internalID: 42952132810605974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_SPA 1_20
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 25
+        width: 49
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 044f44a8d8e42c570800000000000000
+      internalID: 8485431017736565824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_SPA 1_21
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 25
+        width: 49
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59e91adbcaebd3f70800000000000000
+      internalID: 9168694065521335957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_SPA 1_22
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 25
+        width: 49
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2a4287d5420aa5b0800000000000000
+      internalID: -5356466307812144595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_SPA 1_23
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 25
+        width: 49
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa898a0a3850407d0800000000000000
+      internalID: -2953229392753944401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_SPA 1_24
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 25
+        width: 49
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 367855d6ae0bfcda0800000000000000
+      internalID: -5922320464065755293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_SPA 1_25
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 25
+        width: 49
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37661aaa87a9d9520800000000000000
+      internalID: 2710492393796363891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_SPA 1_26
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 25
+        width: 32
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42dd5ae8e36738b90800000000000000
+      internalID: -7240813764828340956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_SPA 1_27
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 25
+        width: 49
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77987af9abbf63540800000000000000
+      internalID: 4987450416320448887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_SPA 1_28
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 25
+        width: 49
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 072a36531104a5910800000000000000
+      internalID: 1826843041506501232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Logo_SPA 1_0: -6804729895701328245
+      Logo_SPA 1_1: -6402000315186153637
+      Logo_SPA 1_10: 4160930419462883607
+      Logo_SPA 1_11: 4382165353997397561
+      Logo_SPA 1_12: -7965779040144358263
+      Logo_SPA 1_13: 3082714963663429474
+      Logo_SPA 1_14: 1143859868996940454
+      Logo_SPA 1_15: 2861405890942247106
+      Logo_SPA 1_16: -2674620638187190164
+      Logo_SPA 1_17: 6111173206116689433
+      Logo_SPA 1_18: 1803618294379547806
+      Logo_SPA 1_19: 42952132810605974
+      Logo_SPA 1_2: 9029429193481103114
+      Logo_SPA 1_20: 8485431017736565824
+      Logo_SPA 1_21: 9168694065521335957
+      Logo_SPA 1_22: -5356466307812144595
+      Logo_SPA 1_23: -2953229392753944401
+      Logo_SPA 1_24: -5922320464065755293
+      Logo_SPA 1_25: 2710492393796363891
+      Logo_SPA 1_26: -7240813764828340956
+      Logo_SPA 1_27: 4987450416320448887
+      Logo_SPA 1_28: 1826843041506501232
+      Logo_SPA 1_3: 3570915420946791711
+      Logo_SPA 1_4: -1494192003420026368
+      Logo_SPA 1_5: 5129752950888628012
+      Logo_SPA 1_6: -3985585940049115025
+      Logo_SPA 1_7: 1769165393233140892
+      Logo_SPA 1_8: -3292808268526638016
+      Logo_SPA 1_9: -5365455327980603433
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
