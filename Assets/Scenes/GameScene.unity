@@ -11128,6 +11128,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2106666037}
+  - component: {fileID: 2106666038}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -11150,6 +11151,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2106666038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106666036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 810039f5ab0d68045baa5d5e8f1766be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  localizedGreeting:
+    m_TableReference:
+      m_TableCollectionName: GUID:5142523c189eb2143909fdde280a63a6
+    m_TableEntryReference:
+      m_KeyId: 22176229273600
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!1001 &2135268112782755012
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11449,10 +11474,10 @@ SceneRoots:
   - {fileID: 2135268112782755012}
   - {fileID: 1221517364}
   - {fileID: 1504827849}
-  - {fileID: 2106666037}
   - {fileID: 1136663068}
   - {fileID: 1033169679}
   - {fileID: 1010568203}
   - {fileID: 67970930}
   - {fileID: 1874696933}
+  - {fileID: 2106666037}
   - {fileID: 267788114}
