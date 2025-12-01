@@ -1318,6 +1318,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &636408571 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3393475694449797545, guid: e5d053dc0789f67438fa3b453ccee7ef, type: 3}
+  m_PrefabInstance: {fileID: 2135268112782755012}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &657562157
 GameObject:
   m_ObjectHideFlags: 0
@@ -11172,6 +11177,8 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  dummy: {fileID: 636408571}
+  player: {fileID: 62321774}
   references:
     version: 2
     RefIds: []

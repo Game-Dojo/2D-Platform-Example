@@ -1,6 +1,9 @@
 using System;
+using System.Collections;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 namespace Managers
 {
@@ -15,6 +18,19 @@ namespace Managers
         [SerializeField] private CanvasGroup settingsGroup;
 
         private bool _settingsOpen = false;
+
+        private IEnumerator Start()
+        {
+            mainGroup.alpha = 0;
+            mainGroup.DOFade(1, 2.0f);
+            
+            foreach (RectTransform button in mainGroup.transform)
+            {
+                button.localPosition = new Vector3(button.localPosition.x + 2.0f, button.localPosition.y, button.localPosition.z);
+                button.DOAnchorPosX(0, 2.0f);
+                yield return new WaitForSeconds(0.1f);
+            }
+        }
 
         public void PlayGame()
         {
