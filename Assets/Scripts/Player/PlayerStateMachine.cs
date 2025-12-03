@@ -106,9 +106,6 @@ namespace Player
                     
                     if (_controller.CheckFall())
                         SetState(States.Fall);
-                    
-                    if (_controller.CheckHitButton())
-                        SetState(States.Hit);
                     break;
                 #endregion
             
